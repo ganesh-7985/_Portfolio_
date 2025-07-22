@@ -89,21 +89,11 @@ export function Navbar() {
 
         <NavItems items={navLinks} />
 
-        <div className="flex items-center gap-4">
-          {/* {mounted && (
-            <Button
-              variant="ghost"
-              size="icon"
-              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-              aria-label="Toggle theme"
-            >
-              {theme === "dark" ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
-            </Button>
-          )} */}
+        <div className="flex items-center gap-4 z-50">
           <Button asChild variant="outline" className="border-primary text-primary hover:bg-primary/10">
-            <a href="/resume.pdf" target="_blank" rel="noreferrer">
+            <Link href="/resume.pdf" target="_blank" rel="noreferrer">
               Resume
-            </a>
+            </Link>
           </Button>
         </div>
       </motion.div>
@@ -179,9 +169,9 @@ export function Navbar() {
                 </a>
               ))}
               <Button asChild variant="outline" className="mt-4 border-primary text-primary hover:bg-primary/10 w-full">
-                <a href="/resume.pdf" target="_blank" rel="noreferrer" onClick={() => setIsMenuOpen(false)}>
+                <Link href="/resume.pdf" target="_blank" rel="noreferrer" onClick={() => setIsMenuOpen(false)}>
                   Resume
-                </a>
+                </Link>
               </Button>
               <div className="mt-6 w-full">
                 <SocialLinks />

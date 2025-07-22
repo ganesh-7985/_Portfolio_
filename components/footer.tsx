@@ -1,5 +1,3 @@
-import { SocialLinks } from "@/components/navbar"
-
 export function Footer() {
   return (
     <footer className="bg-secondary py-2 px-4 text-center">

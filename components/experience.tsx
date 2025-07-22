@@ -7,27 +7,38 @@ import { SectionHeader } from "@/components/section-header"
 export function Experience() {
   const [activeTab, setActiveTab] = useState(0)
 
-  const jobs = [
-    {
-      company: "Blackcoffer",
-      title: "Frontend Developer Intern",
-      period: "January 2024 – May 2024",
-      duties: [
-        "Developed and optimized frontend features using React.js and Tailwind CSS",
-        "Integrated REST APIs and improved UI/UX responsiveness across client projects",
-        "Delivered reusable and accessible component libraries for better scalability",
-      ],
-    },
-    {
-      company: "Optica Society",
-      title: "Technical Member",
-      period: "Auguest 2023 – May 2024",
-      duties: [
-        "Participated in team-based technical projects focused on innovation and outreach",
-        "Contributed to knowledge-sharing workshops and coding events",
-      ],
-    },
-  ];
+ const jobs = [
+  {
+    company: "CloudQA",
+    title: "Software Engineer Intern",
+    period: "June 2025 – Present",
+    duties: [
+      "Architected and organized the Chrome extension codebase (Manifest V3) including service worker, offscreen document, and DevTools/UI panels",
+      "Built a DebuggerManager using the Chrome Debugger domain to intercept and rewrite in-flight HTTP requests and serve mocked responses per user rules",
+      "Enhanced the recorder UI to capture full request/response details—headers, payloads, and bodies—by integrating Fetch.enable and Fetch.getResponseBody",
+      "Implemented in-memory logging, retry logic, and rule grouping for API interception, boosting reliability and performance"
+    ],
+  },
+  {
+    company: "Blackcoffer",
+    title: "Frontend Developer Intern",
+    period: "January 2024 – May 2024",
+    duties: [
+      "Developed and optimized frontend features using React.js and Tailwind CSS",
+      "Integrated REST APIs and improved UI/UX responsiveness across client projects",
+      "Delivered reusable and accessible component libraries for better scalability",
+    ],
+  },
+  {
+    company: "Optica Society",
+    title: "Technical Member",
+    period: "August 2023 – May 2024",
+    duties: [
+      "Participated in team-based technical projects focused on innovation and outreach",
+      "Contributed to knowledge-sharing workshops and coding events",
+    ],
+  },
+];
   return (
     <section id="experience" className="section-container">
       <SectionHeader number="02" title="Where I've Worked" />
